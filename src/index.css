@@ -19,6 +19,7 @@ h1 a.text-light:hover {
 }
 .nuevo-post{
   font-weight: bold;
+  color: black;
   text-transform: uppercase;
 }
 
