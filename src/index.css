@@ -26,6 +26,10 @@ h1 a.text-light:hover {
 .btn {
   font-weight: bold;
 }
+
+.btn-warning:hover {
+  background-color: #FF6347	;
+}
 .form-group label,
 .list-group-item {
   font-size: 1.4rem;
