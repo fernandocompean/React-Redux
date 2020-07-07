@@ -1,0 +1,29 @@
+{
+    "productos": [
+        {
+        "id": 1,
+        "nombre": "Ácido Acetilsalicílico",
+        "precio": "40"
+        },
+        {
+        "id": 2,
+        "nombre": "Paracetamol",
+        "precio": "1"
+        },
+        {
+        "nombre": "Clorfenamina",
+        "precio": "300",
+        "id": 3
+        },
+        {
+        "nombre": "Dimercaprol",
+        "precio": "200",
+        "id": 4
+        },
+        {
+        "nombre": "Penicilamina",
+        "precio": "200",
+        "id": 5
+        }
+    ]
+}
