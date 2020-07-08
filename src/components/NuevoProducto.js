@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
 import { crearNuevoProductoAction } from '../actions/productoActions';
 
@@ -9,6 +9,10 @@ import { crearNuevoProductoAction } from '../actions/productoActions';
         const [precio, guardarPrecio] = useState('');
 
         const dispatch = useDispatch();
+
+        const cargando = useSelector( state => state.productos.loading );
+        const error = useSelector( state => state.productos.error );
+        
 
         const agregarProducto = producto => dispatch( crearNuevoProductoAction(producto) );
 
@@ -67,6 +71,13 @@ import { crearNuevoProductoAction } from '../actions/productoActions';
                                 className="btn btn-info font-weight-bold text-uppercase d-block w-100"
                             >Agregar</button>
                         </form>
+                        {cargando ? <div class="text-center">
+                                        <div class="spinner-border m-5" role="status">
+                                        </div>
+                                    </div> : null}
+                        {error ? <div class="alert alert-danger p2 mt-4 text-center">
+                                    Hubo un error!
+                                </div> : null}
                     </div>
                 </div>
             </div>
