@@ -20,8 +20,7 @@ export function crearNuevoProductoAction(producto) {
 }
 
 const agregarProducto = () => ({
-    type: AGREGAR_PRODUCTO,
-    payload: true
+    type: AGREGAR_PRODUCTO
 })
 
 const agregarProductoExito = producto => ({
@@ -29,6 +28,7 @@ const agregarProductoExito = producto => ({
     payload: producto
 })
 
-const agregarProductoError = () => ({
-    type: AGREGAR_PRODUCTO_ERROR
+const agregarProductoError = estado => ({
+    type: AGREGAR_PRODUCTO_ERROR,
+    payload: estado
 })
