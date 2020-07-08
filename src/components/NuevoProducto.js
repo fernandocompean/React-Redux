@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import { crearNuevoProductoAction } from '../actions/productoActions';
 
-    const NuevoProducto = () => {
+    const NuevoProducto = ({history}) => {
 
         const [nombre, guardarNombre] = useState('');
         const [precio, guardarPrecio] = useState('');
@@ -27,6 +27,8 @@ import { crearNuevoProductoAction } from '../actions/productoActions';
                 nombre,
                 precio
             });
+                
+            history.push('/');
 
         }
 
