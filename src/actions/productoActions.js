@@ -22,11 +22,12 @@ export function crearNuevoProductoAction(producto) {
             await clienteAxios.post('/productos', producto);
             dispatch(agregarProductoExito(producto));
 
-            Swal.fire(
-                'Correcto!', 
-                'El producto se agregó correctamente.',
-                'success'
-            );
+            Swal.fire({
+                title: 'Correcto!',
+                text: "El producto se agregó correctamente",
+                icon: 'success',
+                confirmButtonColor: '#6CC3D5'
+            })
 
         } catch (error) {
             console.log(error);
