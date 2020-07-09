@@ -22,8 +22,8 @@ const Productos = () => {
 
            { error ? <p className="font-weight-bold alert alert-danger text-center mt-4">Hubo un error</p> : null }
            
-           {cargando ? <div class="text-center">
-                                        <div class="spinner-border m-5" role="status">
+           {cargando ? <div className="text-center">
+                                        <div className="spinner-border m-5" role="status">
                                         </div>
                                     </div> : null}
 
@@ -36,7 +36,7 @@ const Productos = () => {
                     </tr>
                </thead>
                <tbody>
-               {productos.length === 0 ? <tr><td colspan="3"><p className=" font-weight-bold text-center mt-4">No hay productos</p></td></tr> : (
+               {productos.length === 0 ? <tr><td colSpan="3"><p className=" font-weight-bold text-center mt-4">No hay productos</p></td></tr> : (
                        productos.map(producto => (
                            <Producto
                                 key={producto.id}
