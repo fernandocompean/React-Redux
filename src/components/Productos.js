@@ -10,7 +10,7 @@ const Productos = () => {
     useEffect( () => {
         const cargarProductos = () => dispatch(obtenerProductosAction())
         cargarProductos()
-    }, []);
+    }, [dispatch]);
 
     const productos = useSelector (state => state.productos.productos);
     const error = useSelector(state => state.productos.error);
