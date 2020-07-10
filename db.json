@@ -1,29 +1,49 @@
 {
-    "productos": [
-        {
-        "id": 1,
-        "nombre": "Ácido Acetilsalicílico",
-        "precio": "40"
-        },
-        {
-        "id": 2,
-        "nombre": "Paracetamol",
-        "precio": "1"
-        },
-        {
-        "nombre": "Clorfenamina",
-        "precio": "300",
-        "id": 3
-        },
-        {
-        "nombre": "Dimercaprol",
-        "precio": "200",
-        "id": 4
-        },
-        {
-        "nombre": "Penicilamina",
-        "precio": "200",
-        "id": 5
-        }
-    ]
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Ácido Acetilsalicílico",
+      "precio": "50"
+    },
+    {
+      "nombre": "Clorfenamina",
+      "precio": "300",
+      "id": 3
+    },
+    {
+      "nombre": "Dimercaprol",
+      "precio": "500",
+      "id": 4
+    },
+    {
+      "nombre": "Penicilamina",
+      "precio": "200",
+      "id": 5
+    },
+    {
+      "nombre": "Clonazepam",
+      "precio": 100,
+      "id": 6
+    },
+    {
+      "nombre": "Keterolaco",
+      "precio": 200,
+      "id": 8
+    },
+    {
+      "nombre": "Naproxeno",
+      "precio": 100,
+      "id": 11
+    },
+    {
+      "nombre": "Omeprazol",
+      "precio": 40,
+      "id": 12
+    },
+    {
+      "nombre": "Amoxicilina",
+      "precio": 30,
+      "id": 13
+    }
+  ]
 }
